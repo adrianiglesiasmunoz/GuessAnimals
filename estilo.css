@@ -1,0 +1,58 @@
+body, html{
+  font: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin: 10px;
+  background-color: rgb(114, 142, 218);
+}
+
+header{
+  background-image: url("Imagenes/fondoheader.jpg");
+  height: 20vh;
+  width: 100vw;
+  margin-top: -50px;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+h1{
+  padding: 30px;
+  text-align: center;
+  font-size: 2.7rem;
+  color: #F77530;
+  font-family:
+}
+
+input{
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  margin: 10px;
+  border-radius: 45px;
+  background-color: rgb(235, 240, 19);
+  border: 3px solid rgb(34, 139, 17);
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+input:hover{
+  background-color: rgb(34, 139, 17);
+  border: 3px solid rgb(235, 240, 19);
+}
+
+section{
+  display: flex;
+  flex-flow: wrap row;
+}
+
+.conjunto{
+  flex: 1;
+  margin: 20px;
+}
+
+#abambi img{
+  margin-bottom: 20px;
+}
+
+.bAhoraTu{
+  background-color: #F77530;
+}

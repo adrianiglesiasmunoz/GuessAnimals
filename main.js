@@ -22,15 +22,14 @@ function DatosAnimal(nombreAnimal, tipoAnimal, razaAnimal, edadAnimal){
     alert(this.info);
   }
   var acumula, acumula2, acumula3;
+
   this.ahoraTu = function(){
-    var nombres = document.getElementsByClassName('bNombre');
     var contador = 0;
     var digoNombre = prompt("¿Cómo me llamo?");
     if(digoNombre == this.nombre){
       alert("Enhorabuena, has acertado!!!");
       acumula = 'Bien';
       contador+=1;
-      nombres.style.backgroundColor = "green";
     }
     else {
       alert("Has fallado. Recuerda, mi nombre es " + this.nombre + ".");
@@ -57,9 +56,9 @@ function DatosAnimal(nombreAnimal, tipoAnimal, razaAnimal, edadAnimal){
       acumula3 = 'Mal';
     }
     var digoEdad = prompt("¿Cuántos años tengo?");
-    if((digoEdad == this.edad) && (acumula, acumula2, acumula3 == 'Bien')){ /*Pendiente intentar hacerlo con booleanos*/
-      alert("Enhorabuena, has acertado todas las preguntas!!. Tu puntuación es " + contador + " de 4.");
+    if((digoEdad == this.edad) && (acumula, acumula2, acumula3 == 'Bien')){
       contador+=1;
+      alert("Enhorabuena, has acertado todas las preguntas!!. Tu puntuación es " + contador + " de 4.");
     }
     else if(digoEdad == this.edad){
       contador+=1;
@@ -73,8 +72,11 @@ function DatosAnimal(nombreAnimal, tipoAnimal, razaAnimal, edadAnimal){
 
 }
 
-/* Instanciamos 4 objetos */
-var tobbie = new DatosAnimal("Tobbie", "perro", "Pastor Alemán", 6);
-var garras = new DatosAnimal("Garras", "gato", "siamés", 4);
-var bambi = new DatosAnimal("Bambi", "ciervo", "sambar", 8);
-var bolita = new DatosAnimal("Bolita", "búho", "lechuza", 33);
+var jack = new DatosAnimal("Jack", "Hipopótamo", "Común", 11);
+var sammy = new DatosAnimal("Sammy", "Cerdo", "Landrace", 4);
+var trompas = new DatosAnimal("Trompas", "Elefante", "Africano", 8);
+var rusty = new DatosAnimal("Rusty", "Águila", "Americana", 16);
+var garras = new DatosAnimal("Garras", "Gato", "Burmés", 7);
+var toby = new DatosAnimal("Toby", "Perro", "Dálmata", 6);
+var teddy = new DatosAnimal("Teddy", "Oso", "Pardo", 25);
+var bandit = new DatosAnimal("Bandit", "Conejo", "Mini Rex", 2);

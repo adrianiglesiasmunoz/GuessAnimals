@@ -21,52 +21,49 @@ function DatosAnimal(nombreAnimal, tipoAnimal, razaAnimal, edadAnimal){
   this.mostrarInfo = function(){
     alert(this.info);
   }
-  var acumula, acumula2, acumula3;
 
   this.ahoraTu = function(){
-    var contador = 0;
+    var i = 0;
+    var x = 0;
     var digoNombre = prompt("¿Cómo me llamo?");
     if(digoNombre == this.nombre){
       alert("Enhorabuena, has acertado!!!");
-      acumula = 'Bien';
-      contador+=1;
+      x+=1;
+      i+=1;
     }
     else {
       alert("Has fallado. Recuerda, mi nombre es " + this.nombre + ".");
-      acumula = 'Mal';
     }
     var digoAnimal = prompt("¿Qué animal soy?");
     if(digoAnimal == this.animal){
       alert("Enhorabuena, has acertado!!!");
-      acumula2 = 'Bien';
-      contador+=1;
+      x+=1;
+      i+=1;
     }
     else {
       alert("Has fallado. Recuerda, soy un " + this.animal + ".");
-      acumula2 = 'Mal';
     }
     var digoRaza = prompt("¿De qué raza soy?");
     if(digoRaza == this.raza){
       alert("Enhorabuena, has acertado!!!");
-      acumula3 = 'Bien';
-      contador+=1;
+      x+=1;
+      i+=1;
     }
     else {
       alert("Has fallado. Recuerda, soy de la raza " + this.raza + ".");
-      acumula3 = 'Mal';
     }
     var digoEdad = prompt("¿Cuántos años tengo?");
-    if((digoEdad == this.edad) && (acumula, acumula2, acumula3 == 'Bien')){
-      contador+=1;
-      alert("Enhorabuena, has acertado todas las preguntas!!. Tu puntuación es " + contador + " de 4.");
+    if((digoEdad == this.edad) && (x==3)){
+      i+=1;
+      alert("Enhorabuena, has acertado todas las preguntas!!. Tu puntuación es " + i + " de 4.");
     }
     else if(digoEdad == this.edad){
-      contador+=1;
-      alert("Enhorabuena, has acertado!!. Tu puntuación es " + contador + " de 4.");
+      i+=1;
+      alert("Enhorabuena, has acertado!!. Tu puntuación es " + i + " de 4.");
     }
     else {
       alert("Has fallado. Recuerda, tengo " + this.edad + " años.");
-      alert("Tu puntuación es " + contador + " de 4.");
+      alert("Tu puntuación es " + i + " de 4.");
     }
   }
 
